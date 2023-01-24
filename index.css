@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.visible {
+  display: block;
+  margin: auto;
+}
+
+.invisible {
+  display: none;
+}
+
+header p.header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header p.header a.header {
+  text-decoration: none;
+  color: #000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border: 2px solid #000;
+}
+
+header nav ul.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 15px;
+}
+
+header nav ul.nav li a {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}
+
+header nav ul.nav li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul.nav li a.active {
+  text-decoration: none;
+  color: #9847fe;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+main section.date {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding-right: 20px;
+}
+
+main section.bookList {
+  max-width: 100%;
+  min-width: 290px;
+  margin: 50px 20px 20px 20px;
+  height: 390px;
+}
+
+main section.bookList div.booksContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main section.bookList div.booksContainer div.bookList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #000;
+  height: 300px;
+  overflow: scroll;
+}
+
+main section.bookList div.booksContainer div.bookList ul.bookList {
+  list-style: none;
+  padding: 0;
+}
+
+div.bookList li.bookList:nth-child(odd) {
+  background-color: #e6ebeb;
+}
+
+div.bookList li.bookList:nth-child(even) {
+  background-color: #fff;
+}
+
+main section.bookList div.booksContainer div.bookList ul.bookList li.bookList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+section.addBook {
+  margin: 50px 20px 20px 20px;
+  height: 390px;
+}
+
+section.addBook div.addBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+section.addBook form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+section.addBook form .btnAdd {
+  align-self: flex-end;
+  padding: 0 20px;
+}
+
+section.contact {
+  margin: 50px 20px 20px 20px;
+  height: 390px;
+}
+
+section.contact div.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+  width: calc(100% - 44px);
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 320px) {
+  header nav {
+    padding: 10px 5px;
+    border: 2px solid #000;
+  }
+
+  header p.header {
+    text-align: center;
+  }
+
+  header nav ul.nav {
+    gap: 10px;
+  }
+}

@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Books With ES6</title>
-
     <link rel="stylesheet" href="index.css">
+    <title>Awesome Books With ES6</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <p class="header"><a class="header" href="#">Awesome Books</a></p>
+            <ul class="nav">
+            <li><a id="listBook" href="#">List</a></li>
+            <li><a id="addBook" href="#addBook">Add new</a></li>
+            <li><a id="contact" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="date">
+            <p id="date" class="date"></p>
+        </section>
+        <section class="bookList visible">
+            <div class="booksContainer">
+            <h1>All awesome Books</h1>
+            <div id="bookListContainer" class="bookList">
+                <ul id="ulBookList" class="bookList"></ul>
+            </div>
+            </div>
+        </section>
+
+        <section class="addBook invisible">
+            <div class="addBook">
+            <h1>Add a new book</h1>
+            <form id="addBookForm">
+                <input type="text" name="title" id="title" placeholder="Title" />
+                <input type="text" name="author" id="author" placeholder="Author" />
+                <input class="btnAdd" id="btnAdd" type="submit" value="Add" />
+            </form>
+            </div>
+        </section>
+
+        <section class="contact invisible">
+            <div class="contact">
+            <h1>Contact information</h1>
+            <p>Do have any question or just want to say "Hello"?<br />You can reach out to us!</p>
+            <ul>
+                <li>Our email: mail@mail.com</li>
+                <li>Our phone number:0043586534334</li>
+                <li>Our address:Streetname 22,84503 City, Country</li>
+            </ul>
+            </div>
+        </section>
+
+        <footer>Copyright</footer>
+    </main>
+
     <script type="module" src="index.js"></script>
 </body>
 </html>
